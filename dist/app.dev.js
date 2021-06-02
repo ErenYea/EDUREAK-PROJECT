@@ -47,7 +47,7 @@ app.post("/new_contact", function (req, res) {
     name: name,
     phone: phone,
     crazy: true
-  }, photo, function (err, body, header) {
+  }, phone, function (err, body, header) {
     if (err) {
       res.send("Error creating contact");
       return;

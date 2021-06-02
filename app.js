@@ -37,7 +37,7 @@ app.post("/new_contact", (req, res) => {
   var name = req.body.name;
   var phone = req.body.phone;
 
-  db.insert({ name, phone, crazy: true }, photo, (err, body, header) => {
+  db.insert({ name, phone, crazy: true }, phone, (err, body, header) => {
     if (err) {
       res.send("Error creating contact");
       return;
