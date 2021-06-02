@@ -21,7 +21,7 @@ var methodOverride = require("method-override");
 var nano = require("nano")("http://localhost:5948");
 
 var db = nano.use("address");
-var app = express;
+var app = express();
 app.set("port", process.env.PORT || 3000);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
