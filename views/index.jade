@@ -10,4 +10,19 @@ block content
         p: button(type="submit") Add New Contact
     
     h1 Add new Database
+    form(action="POST",action="/createdb")
+        p Database name: 
+        input#title(type="text",name="dbname")
+        p: button(type="submit") Add new Database 
     
+    h1 enter Phone number to delete new_contact 
+    form(action="POST",action="/delete_contact")
+        p Phone No.: 
+        input#title(type="text",name="phone")
+        p: button(type="submit") Delete Contact 
+    
+    h1 View specific contact 
+    form(action="POST",action="/view_conatct")
+        p Phone Numeber: 
+        input#title(type="text",name="phone")
+        p: button(type="submit")  Search Contact
