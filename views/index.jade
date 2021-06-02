@@ -1,1 +1,13 @@
 extend layout 
+
+block content
+    h1 Add New Contact
+    form(method="POST",action="/new_contact")
+        p Name
+        input#title(typr="text",name=name)
+        p Phone NO.:
+        input#title(type="text",name="phone")
+        p: button(type="submit") Add New Contact
+    
+    h1 Add new Database
+    
