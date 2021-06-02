@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title></title>
+    <link rel="stylesheet" href="/stylesheet/style.css"/>
+  </head>
+  <body> 
+    <h1>Add New Contact</h1>
+    <form method="POST" action="/new_contact">
+      <p>Name</p>
+      <input id="title" typr="text"/>
+      <p>Phone NO.:</p>
+      <input id="title" type="text" name="phone"/>
+      <p>
+        <button type="submit">Add New Contact</button>
+      </p>
+    </form>
+    <h1>Add new Database</h1>
+    <form method="POST" action="/createdb">
+      <p>Database name: </p>
+      <input id="title" type="text" name="dbname"/>
+      <p>
+        <button type="submit">Add new Database </button>
+      </p>
+    </form>
+    <h1>enter Phone number to delete new_contact </h1>
+    <form method="POST" action="/delete_contact">
+      <p>Phone No.: </p>
+      <input id="title" type="text" name="phone"/>
+      <p>
+        <button type="submit">Delete Contact </button>
+      </p>
+    </form>
+    <h1>View specific contact </h1>
+    <form method="POST" action="/view_contact">
+      <p>Phone Numeber: </p>
+      <input id="title" type="text" name="phone"/>
+      <p>
+        <button type="submit"> Search Contact</button>
+      </p>
+    </form>
+  </body>
+</html>
